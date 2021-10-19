@@ -3,6 +3,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .highlighter {
@@ -15,9 +20,12 @@
 #liveVideo {
   position: relative;
   float: left;
-  width: calc(100%);
+  /* width: 100%; */
   margin: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #liveVideo p {
@@ -38,3 +46,24 @@
   /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
+#all-controls {
+  padding: 25px;
+}
+
+#model_prog_main {
+  width: 50%;
+}
+
+.video-controls {
+  display: flex;
+  gap: 10px;
+}
+
+#ver {
+  font-style: italic;
+}
+
+.gallery {
+  margin-bottom: 15px;
+  text-align: center;
+}
